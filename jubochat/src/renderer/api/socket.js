@@ -5,7 +5,7 @@ import websql from '../utils/websql'
 var websock = null
 
 function initWebSocket () {
-  websock = new WebSocket('ws://192.168.0.102:11088')
+  websock = new WebSocket('ws://127.0.0.1:11088')
   // websock = new WebSocket('ws://www.jjldkj.com:13088')
   websock.onmessage = function (e) {
     websocketonmessage(e)
